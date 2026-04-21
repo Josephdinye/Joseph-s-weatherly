@@ -124,13 +124,13 @@ export default function SearchBar({ onSearch }) {
         onClick={getCurrentLocation}
         style={{
           position: 'absolute',
-          right: '80px',
+          right: '79px',
           top: '50%',
           transform: 'translateY(-50%)',
           background: 'rgb(14, 9, 123)',
           color: 'white',
           border: 'none',
-          padding: '15px 12px',
+          padding: '12px 12px',
           borderRadius: '9999px',
           cursor: 'pointer',
           fontSize: '0.95rem'

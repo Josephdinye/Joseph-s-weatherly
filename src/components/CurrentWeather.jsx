@@ -5,7 +5,6 @@ export default function CurrentWeather({ weather }) {
   return (
     <div className="weather-card">
       <div className="location">
-        📍
         <h2>
           {weather.name}, {weather.sys.country}
         </h2>
