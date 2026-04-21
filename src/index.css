@@ -311,118 +311,81 @@ footer a:hover {
   border-bottom: none;
 }
 
-@media (max-width: 768px) {
+/* Mobile-Friendly Search Bar */
+.search-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+}
 
-  /* Container spacing */
-  .container {
-    padding: 1rem;
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 16px 16px 16px 20px;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  backdrop-filter: blur(10px);
+  min-width: 0;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.location-btn {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 9999px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.search-btn {
+  background: white;
+  color: #4f46e5;
+  border: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 9999px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+ .search-input::placeholder {
+    content: "Enter city...";
   }
-
-  /* Header */
-  header {
-    margin-bottom: 2rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  /* Search */
-  .search-form {
-    max-width: 100%;
-    margin-bottom: 2rem;
+  .search-wrapper {
+    padding: 0 0.75rem;
   }
 
   .search-input {
-    font-size: 1rem;
-    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+    padding: 14px 14px 14px 16px;
   }
 
+  .search-input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .location-btn,
   .search-btn {
     width: 44px;
     height: 44px;
-  }
-
-  /* Weather card */
-  .weather-card {
-    padding: 1.5rem 1rem;
-    border-radius: 20px;
-  }
-
-  .location {
-    font-size: 1.3rem;
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-
-  .weather-icon {
-    width: 120px;
-    height: 120px;
-  }
-
-  .temperature {
-    font-size: 3.5rem;
-  }
-
-  .description {
-    font-size: 1.2rem;
-  }
-
-  /* Details grid → 2 columns instead of auto */
-  .details {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .detail-item {
-    padding: 1rem 0.5rem;
-  }
-
-  /* Forecast */
-  .forecast-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
-  }
-
-  .forecast-card {
-    padding: 1rem;
-  }
-
-  .forecast-card img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .forecast-temp {
-    font-size: 1.2rem;
-  }
-
-  /* Footer */
-  footer {
-    padding: 1.5rem 1rem;
-  }
-
-  footer p {
-    font-size: 0.95rem;
-  }
-
-  .footer-credit {
-    font-size: 0.85rem;
-  }
-
-  /* Suggestions dropdown */
-  .suggestions-dropdown {
-    max-height: 200px;
-  }
-
-  .suggestion-item {
-    padding: 12px;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 }
