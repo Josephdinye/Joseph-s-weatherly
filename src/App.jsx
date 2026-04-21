@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar';
 import CurrentWeather from './components/CurrentWeather';
 import Forecast from './components/Forecast';
 import Loader from './components/Loader';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [city, setCity] = useState('');
