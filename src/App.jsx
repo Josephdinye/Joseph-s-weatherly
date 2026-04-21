@@ -101,7 +101,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <div className="container flex-1">
         <header>
-          <h1>☀️ Weatherly</h1>
+          <h1>Joseph's ☀️ Weatherly</h1>
           <p>Real-time weather information</p>
         </header>
 
