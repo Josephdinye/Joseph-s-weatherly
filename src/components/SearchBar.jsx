@@ -124,19 +124,19 @@ export default function SearchBar({ onSearch }) {
         onClick={getCurrentLocation}
         style={{
           position: 'absolute',
-          right: '70px',
+          right: '80px',
           top: '50%',
           transform: 'translateY(-50%)',
-          background: 'rgba(255,255,255,0.25)',
+          background: 'rgb(14, 9, 123)',
           color: 'white',
           border: 'none',
-          padding: '8px 12px',
+          padding: '15px 12px',
           borderRadius: '9999px',
           cursor: 'pointer',
           fontSize: '0.95rem'
         }}
       >
-        📍 My Location
+        My Location
       </button>
 
       {/* Autocomplete Dropdown */}

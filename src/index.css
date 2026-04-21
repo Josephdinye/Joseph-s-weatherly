@@ -343,7 +343,7 @@ footer a:hover {
 }
 
 .location-btn {
-  background: rgba(255, 255, 255, 0.3);
+  background: black;
   color: white;
   border: none;
   width: 52px;
